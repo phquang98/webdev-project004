@@ -8,7 +8,7 @@ const Header = (props: HeaderProps): JSX.Element => {
   return (
     <>
       <div className={className}>
-        <p>This is a header</p>
+        <h1>Todo Application</h1>
       </div>
     </>
   );

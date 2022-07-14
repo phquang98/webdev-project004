@@ -2,7 +2,7 @@
 
 Last updated: 14/07/2022
 
-Todo app. Gotta start somewhere...
+Todo app. Gotta start somewhere...  
 Tech: CRA + TS + styled-components
 
 ## Notes

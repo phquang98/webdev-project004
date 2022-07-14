@@ -4,7 +4,7 @@ import { HomePage } from "pages/Home";
 
 export const StyledHomePage = styled(HomePage)`
   & {
-    color: blue;
+    color: ${(props) => props.theme.dark.text};
     font-size: 32px;
   }
 `;

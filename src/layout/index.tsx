@@ -1,7 +1,7 @@
-import { Footer } from "components/Footer";
-import { Header } from "components/Header";
-import { useState } from "react";
 import { Outlet } from "react-router-dom";
+
+import { StyledFooter } from "components/Footer/styles";
+import { StyledHeader } from "components/Header/styles";
 
 type LayoutProps = {
   className?: string;
@@ -13,9 +13,9 @@ const Layout = (props: LayoutProps): JSX.Element => {
   return (
     <>
       <div className={className}>
-        <Header />
+        <StyledHeader />
         <Outlet />
-        <Footer />
+        <StyledFooter />
       </div>
     </>
   );

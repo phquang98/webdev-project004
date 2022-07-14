@@ -3,10 +3,10 @@ import { createGlobalStyle } from "styled-components";
 import robotoFont from "assets/Roboto-Regular.ttf";
 
 export const customTheme = {
-  light: {
-    primary: "#01689b",
-    auxiliary: "#01689b",
-    boldText: "#17628c"
+  dark: {
+    primary: "#0077B6",
+    auxiliary: "#03045E",
+    text: "#FFFFFF"
   },
   defaultFontSize: "16px"
 };

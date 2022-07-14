@@ -8,7 +8,8 @@ const Footer = (props: FooterProps): JSX.Element => {
   return (
     <>
       <div className={className}>
-        <p>This is a footer</p>
+        <p>Personal project by phquang98.</p>
+        <p>Checkout my Github page at: https://github.com/phquang98</p>
       </div>
     </>
   );
