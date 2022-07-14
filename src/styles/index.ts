@@ -11,6 +11,7 @@ export const customTheme = {
   defaultFontSize: "16px"
 };
 
+// Acts like <CSSBaseLine> in MUI
 export const GlobalStyles = createGlobalStyle`
   // define the font
   @font-face {
