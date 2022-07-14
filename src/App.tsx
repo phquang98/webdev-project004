@@ -1,5 +1,7 @@
 import { Direction } from "utils/constants";
 
+var asd = 1;
+
 const App = (): JSX.Element => {
   return (
     <>
