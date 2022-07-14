@@ -1,14 +1,18 @@
-import { Direction } from "utils/constants";
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
 
-// please work
+import AppRoute from "routes";
+import { customTheme, GlobalStyles } from "./styles";
 
 const App = (): JSX.Element => {
   return (
     <>
-      <div>Hello there!</div>
-      <p>
-        Look {Direction.Left} and {Direction.Right} when crossing a road!
-      </p>
+      <ThemeProvider theme={customTheme}>
+        <BrowserRouter>
+          <GlobalStyles />
+          <AppRoute />
+        </BrowserRouter>
+      </ThemeProvider>
     </>
   );
 };
