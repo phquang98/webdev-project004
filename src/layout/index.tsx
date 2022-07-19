@@ -13,9 +13,17 @@ const Layout = (props: LayoutProps): JSX.Element => {
   return (
     <>
       <div className={className}>
-        <StyledHeader />
-        <Outlet />
-        <StyledFooter />
+        <section className="header">
+          <StyledHeader />
+        </section>
+
+        <section className="outlet">
+          <Outlet />
+        </section>
+
+        <section className="footer">
+          <StyledFooter />
+        </section>
       </div>
     </>
   );

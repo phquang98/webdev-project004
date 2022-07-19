@@ -1,4 +1,5 @@
 import { StyledListSection } from "components/ListSection/styles";
+import { StyledTaskSection } from "components/TaskSection/styles";
 
 type HomePageProps = {
   className?: string;
@@ -10,9 +11,9 @@ const HomePage = (props: HomePageProps): JSX.Element => {
   return (
     <>
       <div className={className}>
-        <div>This is the Home Page</div>
         <div className="container">
           <StyledListSection />
+          <StyledTaskSection />
         </div>
       </div>
     </>

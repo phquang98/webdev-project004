@@ -4,12 +4,13 @@ import { HomePage } from "pages/Home";
 
 export const StyledHomePage = styled(HomePage)`
   & {
+    padding: 2rem 0;
     color: ${(props) => props.theme.dark.text};
-    font-size: 32px;
-  }
 
-  & .container {
-    padding: 0 10vw;
-    display: flex;
+    .container {
+      padding: 0 10vw;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 `;
