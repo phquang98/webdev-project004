@@ -2,10 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 import robotoFont from "assets/Roboto-Regular.ttf";
 
+// https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8
 export const customTheme = {
   dark: {
-    primary: "#0077B6",
-    auxiliary: "#03045E",
+    alpha: "#03045E",
+    beta: "#023E8A",
+    gamma: "#0077B6",
+    delta: "#0096C7",
+    epsilon: "#00B4D8",
     text: "#FFFFFF"
   },
   defaultFontSize: "16px"

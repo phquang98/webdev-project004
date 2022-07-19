@@ -5,7 +5,7 @@ import { Layout } from "layout";
 export const StyledLayout = styled(Layout)`
   & {
     font-size: 16px;
-    background-color: ${(props) => props.theme.dark.primary};
+    background-color: ${(props) => props.theme.dark.epsilon};
 
     .header {
       min-height: 10vh;

@@ -9,6 +9,6 @@ export const StyledFooter = styled(Footer)`
     flex-direction: column;
     align-items: flex-end;
     color: ${(props) => props.theme.dark.text};
-    background-color: ${(props) => props.theme.dark.auxiliary};
+    background-color: ${(props) => props.theme.dark.alpha};
   }
 `;
