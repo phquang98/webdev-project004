@@ -1,4 +1,4 @@
-import { Direction } from "utils/constants";
+import { StyledListSection } from "components/ListSection/styles";
 
 type HomePageProps = {
   className?: string;
@@ -11,9 +11,9 @@ const HomePage = (props: HomePageProps): JSX.Element => {
     <>
       <div className={className}>
         <div>This is the Home Page</div>
-        <p>
-          Look {Direction.Left} and {Direction.Right} when crossing a road!
-        </p>
+        <div className="container">
+          <StyledListSection />
+        </div>
       </div>
     </>
   );
