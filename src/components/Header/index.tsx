@@ -17,7 +17,7 @@ const Header = (props: HeaderProps): JSX.Element => {
   return (
     <>
       <div className={className}>
-        <StyledBtn btnClickHdlr={clickHeaderBtnDelThis} color="yellow" bgColor="red">
+        <StyledBtn btnClickHdlr={clickHeaderBtnDelThis} color="yellow" bgColor="red" btnText="text here">
           <FaCoins />
         </StyledBtn>
         <h1>Todo Application</h1>

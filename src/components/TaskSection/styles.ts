@@ -39,7 +39,7 @@ export const StyledTaskSection = styled(TaskSection)`
       height: 20%;
       background-color: ${(props) => props.theme.light.beta};
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
     }
   }

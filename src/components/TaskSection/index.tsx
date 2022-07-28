@@ -1,5 +1,6 @@
 import { MouseEventHandler } from "react";
 import { GrCheckbox, GrCheckboxSelected, GrTrash } from "react-icons/gr";
+import { FaCoins } from "react-icons/fa";
 
 import { StyledPaper } from "components/Paper/styles";
 import { TTask } from "types";
@@ -45,8 +46,25 @@ const TaskSection = (props: TaskSectionProps): JSX.Element => {
           </section>
 
           <section className="task-sec__footer">
-            <StyledBtn btnClickHdlr={clickTaskSecBtnDelThis}>
-              <GrTrash />
+            <StyledBtn
+              btnClickHdlr={clickTaskSecBtnDelThis}
+              btnText="Complete All"
+              color={customTheme.dark.text}
+              bgColor={customTheme.tealAlpha}
+              hoverBgColor={customTheme.tealBeta}
+            >
+              {/* <GrCheckboxSelected /> */}
+              <FaCoins />
+            </StyledBtn>
+            <StyledBtn
+              btnClickHdlr={clickTaskSecBtnDelThis}
+              btnText="Delete List"
+              color={customTheme.dark.text}
+              bgColor={customTheme.redAlpha}
+              hoverBgColor={customTheme.redBeta}
+            >
+              {/* <GrTrash /> */}
+              <FaCoins />
             </StyledBtn>
           </section>
         </StyledPaper>

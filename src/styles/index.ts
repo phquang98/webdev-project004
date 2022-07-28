@@ -15,8 +15,13 @@ export const customTheme = {
   light: {
     alpha: "#ffffff",
     beta: "#e5e5e5",
+    epsilon: "#07c8f9",
     text: "#14213d"
   },
+  tealAlpha: "#2a9d8f",
+  tealBeta: "#264653",
+  redAlpha: "#d00000",
+  redBeta: "#9d0208",
   defaultFontSize: "16px"
 };
 

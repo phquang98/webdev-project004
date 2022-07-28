@@ -7,6 +7,7 @@ type BtnProps = {
   btnText?: string;
   color?: string;
   bgColor?: string;
+  hoverBgColor?: string;
 };
 
 const Btn = (props: BtnProps): JSX.Element => {
