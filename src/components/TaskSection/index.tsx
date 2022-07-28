@@ -1,4 +1,4 @@
-import { GrCheckbox } from "react-icons/gr";
+import { GrCheckbox, GrCheckboxSelected } from "react-icons/gr";
 
 import { StyledPaper } from "components/Paper/styles";
 import { TTask } from "types";
@@ -29,8 +29,9 @@ const TaskSection = (props: TaskSectionProps): JSX.Element => {
             {dumpDelThis.map((ele) => {
               return (
                 <div key={ele.id} className="task-sec__item">
-                  <GrCheckbox />
-                  <p className="task-sec__item-desc">{ele.desc}</p>
+                  {/* IMPROVE: use input + label combo */}
+                  {ele.status === "finished" ? <GrCheckbox /> : <GrCheckboxSelected />}
+                  <label className="task-sec__item-desc">{ele.desc}</label>
                 </div>
               );
             })}

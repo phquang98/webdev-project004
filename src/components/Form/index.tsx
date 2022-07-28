@@ -1,3 +1,5 @@
+import { FaPlus } from "react-icons/fa";
+
 type FormProps = {
   className?: string;
 };
@@ -9,8 +11,10 @@ const Form = (props: FormProps): JSX.Element => {
     <>
       <div className={className}>
         <form action="">
-          <input type="text" placeholder="New list name..." />
-          <button>+</button>
+          <button>
+            <FaPlus />
+          </button>
+          <input type="text" placeholder="New list name..." required />
         </form>
       </div>
     </>
