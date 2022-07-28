@@ -37,6 +37,7 @@ export const StyledTaskSection = styled(TaskSection)`
 
     .task-sec__footer {
       height: 20%;
+      background-color: ${(props) => props.theme.light.beta};
       display: flex;
       justify-content: center;
       align-items: center;

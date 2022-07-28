@@ -5,6 +5,8 @@ type BtnProps = {
   children: ReactNode;
   btnClickHdlr: MouseEventHandler<HTMLButtonElement>;
   btnText?: string;
+  color?: string;
+  bgColor?: string;
 };
 
 const Btn = (props: BtnProps): JSX.Element => {

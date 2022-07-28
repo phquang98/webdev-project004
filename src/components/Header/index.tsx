@@ -7,7 +7,7 @@ type HeaderProps = {
   className?: string;
 };
 
-const clickHeaderBtn: MouseEventHandler = (evt) => {
+const clickHeaderBtnDelThis: MouseEventHandler = (_evt) => {
   console.log("btn click from Header");
 };
 
@@ -17,7 +17,7 @@ const Header = (props: HeaderProps): JSX.Element => {
   return (
     <>
       <div className={className}>
-        <StyledBtn btnClickHdlr={clickHeaderBtn}>
+        <StyledBtn btnClickHdlr={clickHeaderBtnDelThis} color="yellow" bgColor="red">
           <FaCoins />
         </StyledBtn>
         <h1>Todo Application</h1>

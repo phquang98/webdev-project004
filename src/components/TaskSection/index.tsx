@@ -1,8 +1,10 @@
-import { GrCheckbox, GrCheckboxSelected } from "react-icons/gr";
+import { MouseEventHandler } from "react";
+import { GrCheckbox, GrCheckboxSelected, GrTrash } from "react-icons/gr";
 
 import { StyledPaper } from "components/Paper/styles";
 import { TTask } from "types";
 import { customTheme } from "styles";
+import { StyledBtn } from "components/Button/styles";
 
 type TaskSectionProps = {
   className?: string;
@@ -13,6 +15,10 @@ const dumpDelThis: TTask[] = [
   { id: "2", desc: "edit todo list video", status: "unfinished" },
   { id: "3", desc: "delete todo list video", status: "unfinished" }
 ];
+
+const clickTaskSecBtnDelThis: MouseEventHandler = (_evt) => {
+  console.log("btn click from TaskSec");
+};
 
 const TaskSection = (props: TaskSectionProps): JSX.Element => {
   const { className } = props;
@@ -39,7 +45,9 @@ const TaskSection = (props: TaskSectionProps): JSX.Element => {
           </section>
 
           <section className="task-sec__footer">
-            <button>Delete the whole task</button>
+            <StyledBtn btnClickHdlr={clickTaskSecBtnDelThis}>
+              <GrTrash />
+            </StyledBtn>
           </section>
         </StyledPaper>
       </div>
