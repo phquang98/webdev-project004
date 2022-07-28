@@ -1,4 +1,4 @@
-# Issue Summary
+# Summary
 
 ## Issue Type
 
@@ -6,6 +6,7 @@
 - [ ] fix
 - [ ] refactor (bugs not fixed & feats not added)
 - [ ] style (reformat, rename, ...)
+- [ ] others
 
 ## Description
 
