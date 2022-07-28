@@ -5,6 +5,8 @@ Last updated: 14/07/2022
 Todo app. Gotta start somewhere...  
 Tech: CRA + TS + styled-components
 
+Testing PR + Issue.
+
 ## Notes
 
 - use absolute path
