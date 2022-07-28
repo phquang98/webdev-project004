@@ -1,10 +1,9 @@
 ---
 name: Default Issue Template
-about: Summazire here
-title: ''
-labels: ''
-assignees: ''
-
+about: Summarize here
+title: ""
+labels: ""
+assignees: ""
 ---
 
 Description here

@@ -1,6 +1,4 @@
-# PR Checklist
-
-Summary:
+# PR Summary
 
 ## PR Type
 
