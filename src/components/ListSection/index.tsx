@@ -11,10 +11,10 @@ const ListSection = (props: ListSectionProps): JSX.Element => {
   return (
     <>
       <div className={className}>
-        <StyledPaper width={20} height={20} className="list-sec__container">
-          <h3 className="list-sec__title">My lists</h3>
+        <StyledPaper width={20} height={20}>
+          <h3 className="list-sec__header">My lists</h3>
 
-          <ul className="list-clt">
+          <ul className="list-sec__body">
             <li>Youtube</li>
             <li>Work</li>
             <li>Grocery</li>

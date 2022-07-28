@@ -12,6 +12,11 @@ export const customTheme = {
     epsilon: "#00B4D8",
     text: "#FFFFFF"
   },
+  light: {
+    alpha: "#ffffff",
+    beta: "#e5e5e5",
+    text: "#14213d"
+  },
   defaultFontSize: "16px"
 };
 
