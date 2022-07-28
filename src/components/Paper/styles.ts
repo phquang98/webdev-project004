@@ -4,7 +4,7 @@ import { Paper } from "components/Paper";
 
 export const StyledPaper = styled(Paper)`
   & {
-    background-color: ${(props) => props.theme.dark.gamma};
+    background-color: ${(props) => props.bgColor};
     width: ${(props) => `${props.width}rem`};
     height: ${(props) => `${props.height}rem`};
   }

@@ -2,6 +2,7 @@ import { GrCheckbox, GrCheckboxSelected } from "react-icons/gr";
 
 import { StyledPaper } from "components/Paper/styles";
 import { TTask } from "types";
+import { customTheme } from "styles";
 
 type TaskSectionProps = {
   className?: string;
@@ -19,7 +20,7 @@ const TaskSection = (props: TaskSectionProps): JSX.Element => {
   return (
     <>
       <div className={className}>
-        <StyledPaper width={20} height={20}>
+        <StyledPaper bgColor={customTheme.dark.gamma} width={20} height={20}>
           <section className="task-sec__header">
             <h3>Youtube</h3>
             <p>2 tasks remaining</p>

@@ -1,7 +1,12 @@
+import { MouseEventHandler } from "react";
 import { FaPlus } from "react-icons/fa";
 
 type FormProps = {
   className?: string;
+};
+
+const testLabelClickDel: MouseEventHandler<HTMLButtonElement> = (_evt) => {
+  console.log("btn clicked!");
 };
 
 const Form = (props: FormProps): JSX.Element => {
@@ -10,11 +15,11 @@ const Form = (props: FormProps): JSX.Element => {
   return (
     <>
       <div className={className}>
-        <form action="">
-          <button>
+        <form className="form" action="">
+          <button className="form__btn" onClick={testLabelClickDel}>
             <FaPlus />
           </button>
-          <input type="text" placeholder="New list name..." required />
+          <input className="form__ipt" type="text" placeholder="List name" required />
         </form>
       </div>
     </>

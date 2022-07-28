@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 type PaperProps = {
   className?: string;
   children?: ReactNode;
+  bgColor: string;
   width: number;
   height: number;
 };

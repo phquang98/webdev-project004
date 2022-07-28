@@ -20,9 +20,6 @@ export const StyledListSection = styled(ListSection)`
     .list-sec__footer {
       padding: 1rem 0;
       flex: 2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
 `;
