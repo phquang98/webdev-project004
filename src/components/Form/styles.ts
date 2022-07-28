@@ -12,7 +12,6 @@ export const StyledForm = styled(Form)`
         padding: 0 1rem 0 0;
         border: none;
         font-size: 1rem;
-        font-weight: 900;
         cursor: pointer;
         background-color: inherit;
         color: inherit;
@@ -28,7 +27,7 @@ export const StyledForm = styled(Form)`
         transition: border-bottom 100ms ease-in;
 
         :focus {
-          border-bottom: 2px solid currentColor;
+          border-bottom: 3px solid currentColor;
         }
       }
     }

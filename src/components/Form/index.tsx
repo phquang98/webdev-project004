@@ -6,7 +6,7 @@ type FormProps = {
 };
 
 const testLabelClickDel: MouseEventHandler<HTMLButtonElement> = (_evt) => {
-  console.log("btn clicked!");
+  console.log("btn clicked from Form!");
 };
 
 const Form = (props: FormProps): JSX.Element => {
