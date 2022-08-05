@@ -35,17 +35,19 @@ const ListSection = (props: ListSectionProps): JSX.Element => {
       <div className={className}>
         <StyledPaper bgColor={customTheme.dark.gamma} width={20} height={20}>
           <div className="list-sec__wrapper">
-            <h3 className="list-sec__header">My lists</h3>
+            <section className="list-sec__header">
+              <h3>My lists</h3>
+            </section>
 
-            <div className="list-sec__body">
+            <section className="list-sec__body">
               {delListDump.map((ele) => {
                 return <StyledListItem key={ele.id} className="list-sec__item" name={ele.name} id={ele.id} />;
               })}
-            </div>
+            </section>
 
-            <div className="list-sec__footer">
+            <section className="list-sec__footer">
               <StyledForm />
-            </div>
+            </section>
           </div>
         </StyledPaper>
       </div>

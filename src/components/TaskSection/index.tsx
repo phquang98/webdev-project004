@@ -1,5 +1,5 @@
 import { MouseEventHandler } from "react";
-import { GrCheckbox, GrCheckboxSelected, GrTrash } from "react-icons/gr";
+import { GrCheckbox, GrCheckboxSelected } from "react-icons/gr";
 import { FaCoins } from "react-icons/fa";
 
 import { StyledPaper } from "components/Paper/styles";
