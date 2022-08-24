@@ -1,6 +1,7 @@
 import { StyledForm } from "components/Form/styles";
 import { StyledListItem } from "components/ListItem/styles";
 import { StyledPaper } from "components/Paper/styles";
+import { useState } from "react";
 
 import { customTheme } from "styles";
 import { TList } from "types";
@@ -28,6 +29,8 @@ const delListDump: TList[] = [
 ];
 
 const ListSection = (props: ListSectionProps): JSX.Element => {
+  const [listClt, setListClt] = useState<TList[]>([]);
+
   const { className } = props;
 
   return (
@@ -46,7 +49,7 @@ const ListSection = (props: ListSectionProps): JSX.Element => {
             </section>
 
             <section className="list-sec__footer">
-              <StyledForm />
+              <StyledForm setListClt={setListClt} />
             </section>
           </div>
         </StyledPaper>
