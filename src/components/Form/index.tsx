@@ -6,11 +6,10 @@ import { TList } from "types";
 
 type FormProps = {
   className?: string;
-  setListClt: React.Dispatch<React.SetStateAction<TList[]>>;
 };
 
 const Form = (props: FormProps): JSX.Element => {
-  const { className, setListClt } = props;
+  const { className } = props;
 
   const [iptData, setIptData] = useState<string>("");
   const [listClt, setAddOne] = useListClt();

@@ -1,7 +1,8 @@
 import { StyledForm } from "components/Form/styles";
 import { StyledListItem } from "components/ListItem/styles";
 import { StyledPaper } from "components/Paper/styles";
-import { useState } from "react";
+import { ListCltCtx } from "pages/Home";
+import { useContext, useState } from "react";
 
 import { customTheme } from "styles";
 import { TList } from "types";
@@ -10,26 +11,10 @@ type ListSectionProps = {
   className?: string;
 };
 
-const delListDump: TList[] = [
-  {
-    id: "1",
-    name: "Youtube",
-    taskClt: []
-  },
-  {
-    id: "2",
-    name: "Study",
-    taskClt: []
-  },
-  {
-    id: "3",
-    name: "Grocery shopping",
-    taskClt: []
-  }
-];
-
 const ListSection = (props: ListSectionProps): JSX.Element => {
   const [listClt, setListClt] = useState<TList[]>([]);
+
+  const asd = useContext(ListCltCtx);
 
   const { className } = props;
 
@@ -43,13 +28,14 @@ const ListSection = (props: ListSectionProps): JSX.Element => {
             </section>
 
             <section className="list-sec__body">
-              {delListDump.map((ele) => {
-                return <StyledListItem key={ele.id} className="list-sec__item" name={ele.name} id={ele.id} />;
-              })}
+              {asd &&
+                asd.map((ele) => {
+                  return <StyledListItem key={ele.id} className="list-sec__item" name={ele.name} id={ele.id} />;
+                })}
             </section>
 
             <section className="list-sec__footer">
-              <StyledForm setListClt={setListClt} />
+              <StyledForm />
             </section>
           </div>
         </StyledPaper>
